@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Analysis</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+
+</head>
+<body>
+    
+        <header><h1>Image analyzer</h1></header>
+    <main>
+        <form id="uploadForm"  enctype="multipart/form-data">
+            <input type="file" id="imageInput" name="image" accept="image/*">
+           
+            <button type="submit">Upload</button>
+           
+        </form>
+        <div id="loadingIndicator" class="hidden">
+            Loading...
+        </div>
+        <div class="uploaded-photo-wrapper box-wrapper hidden">
+            <h3>Uploaded photo</h3>
+            <img id="uploadedImage" width="320" src="" alt="Uploaded Image">
+        </div>
+
+        <div id="results" class="hidden">
+            <div class="image-analysis-wrapper box-wrapper">
+                <h3>Image Analysis:</h3>
+                <div id="description"></div>
+            </div>
+            
+            <div class="extracted-text-wrapper box-wrapper">
+                <h3>Extracted Text:</h3>
+                <div id="extractedText"></div>
+            </div>
+            
+            <div class="segmented-image-wrapper box-wrapper">
+                <h3>Segmented Image:</h3>
+                <img id="segmentedImage" width="320" src="" alt="Segmented Image">
+            </div>
+    
+            
+        </div>
+
+    </main>
+    
+</body>
+</html>
+

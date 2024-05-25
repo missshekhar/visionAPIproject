@@ -1,0 +1,6 @@
+env/
+*.pyc
+static/*.jpg
+*.tmp
+.vscode/
+.idea/
