@@ -37,7 +37,11 @@ This project is a web application that performs image analysis using the Google 
    ```
    export GOOGLE_APPLICATION_CREDENTIALS="path/to/your_api.json"
    ```
-   
+5. **Paste your API key in place of "API_KEY"**
+   ```
+   os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "API_KEY"
+   ```
+
 ## Usage
 
 1. **Run the Flask application**:
