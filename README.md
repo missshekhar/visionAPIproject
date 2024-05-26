@@ -17,7 +17,7 @@ This project is a web application that performs image analysis using the Google 
 - OpenCV
 - Google Cloud Vision API
 
-## Installation
+## Installation (for Git Bash)
 
 1. **Clone the repository**:
    ```
@@ -27,7 +27,7 @@ This project is a web application that performs image analysis using the Google 
 2. **Create virtual environment**:
    ```
    python -m venv env
-   env\Scripts\activate   <- using Windows Command Prompt
+   source env/Scripts/activate
    ```
 3. **Install dependencies**:
    ```
@@ -37,9 +37,9 @@ This project is a web application that performs image analysis using the Google 
    ```
    export GOOGLE_APPLICATION_CREDENTIALS="path/to/your_api.json"
    ```
-5. **Paste your API key in place of "API_KEY"**
+5. **Place your API key file in the root folder and put its name in place of "API_KEY"**
    ```
-   os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "API_KEY"
+   os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.path.join(app.root_path, "API_KEY.json")
    ```
 
 ## Usage
