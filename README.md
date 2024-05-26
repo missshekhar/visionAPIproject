@@ -27,7 +27,7 @@ This project is a web application that performs image analysis using the Google 
 2. **Create virtual environment**:
    ```
    python -m venv env
-   env\Scripts\activate   <- on Windows
+   env\Scripts\activate   <- using Windows Command Prompt
    ```
 3. **Install dependencies**:
    ```
