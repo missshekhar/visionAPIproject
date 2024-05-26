@@ -33,11 +33,11 @@ This project is a web application that performs image analysis using the Google 
    ```
    pip install -r requirements.txt
    ```
-4. **Set up Google Cloud credentials**
+4. **Place your API key file in the root folder and set up Google Cloud credentials**
    ```
    export GOOGLE_APPLICATION_CREDENTIALS="path/to/your_api.json"
    ```
-5. **Place your API key file in the root folder and put its name in place of "API_KEY"**
+5. **Put the name of you API key file in place of "API_KEY"**
    ```
    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.path.join(app.root_path, "API_KEY.json")
    ```
