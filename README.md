@@ -35,7 +35,7 @@ This project is a web application that performs image analysis using the Google 
    ```
 4. **Set up Google Cloud credentials**
    ```
-   export GOOGLE_APPLICATION_CREDENTIALS="YOUR_API.json"
+   export GOOGLE_APPLICATION_CREDENTIALS="path/to/your_api.json"
    ```
    
 ## Usage
